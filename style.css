@@ -1,0 +1,89 @@
+/* Styles for the main nav bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content .header {
+    background: #333;
+    padding: 16px;
+    margin: 8px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styles for the mega menu */
+.mega-menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.column ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.column li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    color: black;
+    background-color: gray;
+}
